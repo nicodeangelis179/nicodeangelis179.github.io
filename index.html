@@ -10,7 +10,7 @@
       text-align: center;
       margin: 0;
       padding: 20px;
-      background-color: red; /* Changed from #f4f4f4 to red */
+      transition: background-color 1s ease; /* Smooth transition for color change */
     }
     .container {
       max-width: 600px;
@@ -39,5 +39,23 @@
       <p>Welcome to the earth</p>
     </div>
   </div>
+
+  <script>
+    // Array of colors to cycle through
+    const colors = ['red', 'blue', 'green', 'purple', 'orange', 'pink'];
+    let colorIndex = 0;
+
+    // Function to change the background color
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = colors[colorIndex];
+      colorIndex = (colorIndex + 1) % colors.length; // Loop back to the start
+    }
+
+    // Change color every 3 seconds (3000 milliseconds)
+    setInterval(changeBackgroundColor, 3000);
+
+    // Set initial color
+    document.body.style.backgroundColor = colors[0];
+  </script>
 </body>
 </html>

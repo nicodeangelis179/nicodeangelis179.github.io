@@ -3,133 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Company</title>
-    <style>IMG_3121.jpg
-        * {
+    <title>Color Changing Background</title>
+    <style>
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header Section */
-        header {
             height: 100vh;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080');
-            background-size: cover;
-            background-position: center;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-family: Arial, sans-serif;
             color: white;
             text-align: center;
-            padding: 20px;
+            animation: colorChange 10s infinite; /* Animation lasts 10 seconds, loops infinitely */
         }
 
-        header h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        /* Color-changing animation */
+        @keyframes colorChange {
+            0% { background-color: #ff6b6b; }   /* Red */
+            25% { background-color: #4ecdc4; }  /* Turquoise */
+            50% { background-color: #45b7d1; }  /* Blue */
+            75% { background-color: #96c93d; }  /* Green */
+            100% { background-color: #ff6b6b; } /* Back to Red */
         }
 
-        header p {
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds readability over changing colors */
+        }
+
+        p {
             font-size: 1.5rem;
             max-width: 600px;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 1rem;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        nav ul li a:hover {
-            color: #f0c14b;
-        }
-
-        /* Main Content */
-        .section {
-            padding: 5rem 2rem;
-            text-align: center;
-        }
-
-        .section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #333;
-        }
-
-        .section p {
-            font-size: 1.2rem;
-            color: #666;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Footer */
-        footer {
-            background: #222;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <header id="home">
-        <h1>Creative Company</h1>
-        <p>We craft unique solutions that inspire and elevate your brand.</p>
-    </header>
-
-    <section class="section" id="about">
-        <h2>About Us</h2>
-        <p>We are a passionate team dedicated to delivering innovative design and development services tailored to your needs.</p>
-    </section>
-
-    <section class="section" id="services">
-        <h2>Our Services</h2>
-        <p>From web design to branding, we offer a full range of creative services to help your business thrive.</p>
-    </section>
-
-    <section class="section" id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch today to start your next project with us.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Creative Company. All Rights Reserved.</p>
-    </footer>
+    <div>
+        <h1>Welcome to My Website</h1>
+        <p>Enjoy the smooth color-changing background!</p>
+    </div>
 </body>
 </html>

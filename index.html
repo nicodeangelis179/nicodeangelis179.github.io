@@ -3,45 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Changing Background</title>
+    <title>Nico DeAngelis - Portfolio</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem 2rem;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: #4ecdc4;
+        }
+
+        /* Hero Section with Color-Changing Background */
+        .hero {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
-            color: white;
             text-align: center;
-            animation: colorChange 10s infinite; /* Animation lasts 10 seconds, loops infinitely */
+            color: white;
+            animation: colorChange 10s infinite;
         }
 
-        /* Color-changing animation */
         @keyframes colorChange {
-            0% { background-color: #ff6b6b; }   /* Red */
-            25% { background-color: #4ecdc4; }  /* Turquoise */
-            50% { background-color: #45b7d1; }  /* Blue */
-            75% { background-color: #96c93d; }  /* Green */
-            100% { background-color: #ff6b6b; } /* Back to Red */
+            0% { background-color: #ff6b6b; }
+            25% { background-color: #4ecdc4; }
+            50% { background-color: #45b7d1; }
+            75% { background-color: #96c93d; }
+            100% { background-color: #ff6b6b; }
         }
 
-        h1 {
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds readability over changing colors */
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 1rem;
         }
 
-        p {
+        .hero p {
             font-size: 1.5rem;
             max-width: 600px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
-    </style>
-</head>
-<body>
-    <div>
-        <h1>Nico DeAngelis</h1>
-        <p></p>
-    </div>
-</body>
-</html>
+
+        /* General Section Styling */
+        section {
+            padding: 5rem 2rem;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services-container

@@ -1,19 +1,77 @@
-<main class="content">
-    <div class="card">
-        <h2>Section 1</h2>
-        <p><iframe width="25%" height="215" src="https://www.youtube.com/embed/CLxQ8jWr6Do?si=uTjoTMBFKFFhPDtn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>+</p>
-    </div>
-    <div class="card">
-        <h2>Section 2</h2>
-        <p><iframe width="25%" height="215" src="https://www.youtube.com/embed/LGEeKWBEZcs?si=-kkPamIMFD1El_6b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-    </div>
-    <div class="card">
-        <h2>Section 3</h2>
-        <p><iframe width="25%" height="215" src="https://www.youtube.com/embed/_5kGBKQ7NN4?si=SHL3xkYHbtjIWg7e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-    </div>
-    <!-- Added Video Card -->
-    <div class="card">
-        <h2>Featured Video</h2>
-        <iframe width="25%" height="215" src="https://www.youtube.com/embed/wjsszgK6qYA?si=YOqAWxkhb_H9YTyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Blue Website with Videos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1E2A44; /* Dark blue background */
+            color: #ffffff; /* White text for contrast */
+            line-height: 1.6;
+            min-height: 100vh; /* Ensures background covers full height */
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: #2C3E50; /* Slightly lighter dark shade for cards */
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #d3d3d3; /* Light gray for paragraph text */
+        }
+
+        /* Style iframes */
+        .card iframe {
+            max-width: 100%;
+            border-radius: 8px;
+            display: block; /* Prevents unwanted spacing */
+        }
+    </style>
+</head>
+<body>
+    <main class="content">
+        <div class="card">
+            <h2>Section 1</h2>
+            <p><iframe width="25%" height="215" src="https://www.youtube.com/embed/CLxQ8jWr6Do?si=uTjoTMBFKFFhPDtn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </div>
+        <div class="card">
+            <h2>Section 2</h2>
+            <p><iframe width="25%" height="215" src="https://www.youtube.com/embed/LGEeKWBEZcs?si=-kkPamIMFD1El_6b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </div>
+        <div class="card">
+            <h2>Section 3</h2>
+            <p><iframe width="25%" height="215" src="https://www.youtube.com/embed/_5kGBKQ7NN4?si=SHL3xkYHbtjIWg7e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </div>
+        <!-- Added Video Card -->
+        <div class="card">
+            <h2>Featured Video</h2>
+            <p><iframe width="25%" height="215" src="https://www.youtube.com/embed/wjsszgK6qYA?si=YOqAWxkhb_H9YTyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        </div>
+    </main>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Blue Website with Videos</title>
+    <title>Creative Company</title>
     <style>
         * {
             margin: 0;
@@ -12,66 +12,124 @@
             font-family: Arial, sans-serif;
         }
 
-        body {
-            background-color: #1E2A44; /* Dark blue background */
-            color: #ffffff; /* White text for contrast */
-            line-height: 1.6;
-            min-height: 100vh; /* Ensures background covers full height */
+        /* Header Section */
+        header {
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
 
-        /* Main Content */
-        .content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            max-width: 600px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
             gap: 2rem;
         }
 
-        .card {
-            background-color: #2C3E50; /* Slightly lighter dark shade for cards */
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: #f0c14b;
+        }
+
+        /* Main Content */
+        .section {
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
         }
 
-        .card h2 {
-            color: #ffffff;
-            margin-bottom: 1rem;
-        }
-
-        .card p {
-            color: #d3d3d3; /* Light gray for paragraph text */
-        }
-
-        /* Style iframes */
-        .card iframe {
-            max-width: 100%;
-            border-radius: 8px;
-            display: block; /* Prevents unwanted spacing */
+        footer p {
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <main class="content">
-        <div class="card">
-            <h2>Section 1</h2>
-            <p><iframe width="25%" height="215" src="https://www.youtube.com/embed/CLxQ8jWr6Do?si=uTjoTMBFKFFhPDtn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-        </div>
-        <div class="card">
-            <h2>Section 2</h2>
-            <p><iframe width="100%" height="215" src="https://www.youtube.com/embed/LGEeKWBEZcs?si=-kkPamIMFD1El_6b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-        </div>
-        <div class="card">
-            <h2>Section 3</h2>
-            <p><iframe width="100%" height="215" src="https://www.youtube.com/embed/_5kGBKQ7NN4?si=SHL3xkYHbtjIWg7e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-        </div>
-        <!-- Added Video Card -->
-        <div class="card">
-            <h2>Featured Video</h2>
-            <p><iframe width="100%" height="215" src="https://www.youtube.com/embed/wjsszgK6qYA?si=YOqAWxkhb_H9YTyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-        </div>
-    </main>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Creative Company</h1>
+        <p>We craft unique solutions that inspire and elevate your brand.</p>
+    </header>
+
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>We are a passionate team dedicated to delivering innovative design and development services tailored to your needs.</p>
+    </section>
+
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <p>From web design to branding, we offer a full range of creative services to help your business thrive.</p>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch today to start your next project with us.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Creative Company. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
